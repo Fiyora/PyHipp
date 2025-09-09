@@ -5,7 +5,7 @@
 #SBATCH --time=24:00:00   # walltime
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --cpus-per-task=5	# number of processors per task
+#SBATCH --cpus-per-task=1	# number of processors per task
 #SBATCH -J "rs1a"   # job name
 
 ## /SBATCH -p general # partition (queue)
@@ -23,4 +23,4 @@ DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[*range(1,33)],
 print(time.localtime()); \
 print(time.time()-t0);"
 
-aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:012345678901:awsnotify --message "Rs1aJobDone"
+aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:023231074130:awsnotify --message "RS1aJobDone"
