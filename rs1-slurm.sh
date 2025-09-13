@@ -2,6 +2,7 @@
 
 # Submit this script with: sbatch <this-filename>
 
+<<<<<<< HEAD
 #SBATCH --time=1:00:00   # walltime
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
@@ -13,7 +14,6 @@
 #SBATCH -e rs1-slurm.%N.%j.err # STDERR
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
-
 python -u -c "import PyHipp as pyh; \
 import DataProcessingTools as DPT; \
 import os; \
